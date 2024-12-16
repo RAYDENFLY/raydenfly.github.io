@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=VALORANT&display=swap" rel="stylesheet"/>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f1923;
+            background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5e675e64-dabf-412a-8ddb-53c5d92f8fe8/df36uzm-92aa8154-5754-410f-b980-a00abe971146.png/v1/fill/w_1280,h_720,q_80,strp/valorant_wallpaper_by_elvenv_df36uzm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNWU2NzVlNjQtZGFiZi00MTJhLThkZGItNTNjNWQ5MmY4ZmU4XC9kZjM2dXptLTkyYWE4MTU0LTU3NTQtNDEwZi1iOTgwLWEwMGFiZTk3MTE0Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.GrDqzwxmhacHvKQ8Bu2yo10dkmhDF-vFowHyhJP2zt4');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            background: rgba(15, 25, 35, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            color: white;
+            font-family: 'VALORANT', sans-serif;
+        }
+        .container p {
+            color: white;
+        }
+        .container input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container .submit-button {
+            background-color: #ccc;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 20px auto;
+        }
+        .container .submit-button i {
+            font-size: 24px;
+        }
+        .container .footer {
+            margin-top: 20px;
+        }
+        .container .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .container .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer-links {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            font-size: 12px;
+            color: white;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign in</h2>
+        <input type="text" id="username" placeholder="NAMA PENGGUNA">
+        <input type="password" id="password" placeholder="KATA SANDI">
+        <p class="error" id="error-message">Nama pengguna atau kata sandi salah!</p>
+        <button class="submit-button"><i class="fas fa-arrow-right"></i></button>
+        <div class="footer">
+            <p>TIDAK BISA SIGN IN? <a href="#">Hubungi Admin</a></p>
+        </div>
+    </div>
+    <div class="footer-links">
+        <a href="#">Kembali ke Web</a>
+    </div>
+
+    <script>
+        // Simulasi file .env
+        const ENV = {
+            USERNAME: "admin",
+            PASSWORD: "1234",
+        };
+
+        document.querySelector('.submit-button').addEventListener('click', function () {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Validasi login
+            if (username === ENV.USERNAME && password === ENV.PASSWORD) {
+                sessionStorage.setItem('isLoggedIn', true); // Simpan status login
+                window.location.href = "admin.html"; // Arahkan ke halaman admin
+            } else {
+                errorMessage.style.display = 'block'; // Tampilkan pesan error
+            }
+        });
+    </script>
+</body>
+</html>

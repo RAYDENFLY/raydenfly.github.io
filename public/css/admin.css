@@ -1,0 +1,111 @@
+/* General Body Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0f1923; /* Dark background */
+    color: white; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5e675e64-dabf-412a-8ddb-53c5d92f8fe8/df36uzm-92aa8154-5754-410f-b980-a00abe971146.png/v1/fill/w_1280,h_720,q_80,strp/valorant_wallpaper_by_elvenv_df36uzm-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvNWU2NzVlNjQtZGFiZi00MTJhLThkZGItNTNjNWQ5MmY4ZmU4XC9kZjM2dXptLTkyYWE4MTU0LTU3NTQtNDEwZi1iOTgwLWEwMGFiZTk3MTE0Ni5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.GrDqzwxmhacHvKQ8Bu2yo10dkmhDF-vFowHyhJP2zt4');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Admin Container */
+.admin-container {
+    background: rgba(15, 25, 35, 0.9); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+.admin-container h1 {
+    text-align: center;
+    color: #f02d2d; /* Valorant red */
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'VALORANT', sans-serif;
+}
+
+/* Form */
+#settings-form label {
+    color: #f2f2f2;
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Pastikan input dan textarea tidak melebihi lebar form */
+#settings-form input,
+#settings-form textarea {
+    width: calc(100% - 20px); /* Sesuaikan width dengan padding */
+    padding: 10px;
+    margin: 10px 0;
+    background: #1c2733; /* Warna latar belakang */
+    border: 1px solid #f02d2d; /* Border merah */
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    box-sizing: border-box; /* Pastikan padding dihitung dalam width */
+}
+
+/* Sesuaikan tinggi textarea */
+#settings-form textarea {
+    height: 80px; /* Atur tinggi sesuai kebutuhan */
+    resize: none; /* Nonaktifkan resize jika tidak diinginkan */
+}
+
+
+/* Save Button */
+#settings-form button {
+    background-color: #f02d2d; /* Valorant red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#settings-form button:hover {
+    background-color: #d92626; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* Logout Button */
+#logout {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    color: #f02d2d; /* Valorant red */
+    border: 2px solid #f02d2d; /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+#logout:hover {
+    background-color: #f02d2d;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .admin-container {
+        width: 90%;
+    }
+
+    #settings-form button,
+    #logout {
+        font-size: 1em;
+    }
+}
