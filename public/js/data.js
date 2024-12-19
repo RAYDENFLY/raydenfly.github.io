@@ -92,6 +92,28 @@ const defaultData = {
                 web: "Web Development",
                 social: "Social Media Content"
             },
+            projects: [
+                {
+                    title: "LAZ BaitulMaalKu",
+                    company: "Fullstack Developer | Marketing Communication",
+                    date: "January 2024 - Present",
+                    description: "BaitulMaalKu is a digital platform designed to streamline the management of zakat, infaq, and charity donations with transparency and efficiency. The site provides an easy and secure interface for individuals and organizations to donate social funds.",
+                    technologies: [
+                        "Express",
+                        "NodeJS",
+                        "Tailwind CSS",
+                        "Bootstrap 5",
+                        "AnimeJS",
+                        "Font Awesome",
+                        "SQLite",
+                        "Javascript",
+                        "Figma",
+                        "Github"
+                    ],
+                    link: "https://baitulmaalku.com",
+                    imageUrl: "public/img/post/image.png"
+                }
+            ],
             thankYou: "Thank <span>you!</span>"
         }
     },
@@ -188,6 +210,28 @@ const defaultData = {
                 web: "Pengembangan Web",
                 social: "Konten Media Sosial"
             },
+            projects: [
+                {
+                    title: "LAZ BaitulMaalKu",
+                    company: "Fullstack Developer | Marketing Komunikasi",
+                    date: "Januari 2024 - Sekarang",
+                    description: "BaitulMaalKu adalah platform digital yang dirancang untuk mempermudah pengelolaan zakat, infaq, dan sedekah dengan transparansi dan efisiensi. Situs ini menyediakan antarmuka yang mudah dan aman bagi individu dan organisasi untuk menyalurkan dana sosial.",
+                    technologies: [
+                        "Express",
+                        "NodeJS",
+                        "Tailwind CSS",
+                        "Bootstrap 5",
+                        "AnimeJS",
+                        "Font Awesome",
+                        "SQLite",
+                        "Javascript",
+                        "Figma",
+                        "Github"
+                    ],
+                    link: "https://baitulmaalku.com",
+                    imageUrl: "public/img/post/image.png"
+                }
+            ],
             thankYou: `Terima <span>kasih!</span>`
         }
     }

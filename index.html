@@ -106,22 +106,96 @@
         <h1>Projects</h1>
         <p>Berikut ini adalah beberapa projects yang pernah saya buat</p>
     </div>
-  
-    <div class="row">
-        <div class="col-lg-12">
-            <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active"><!-- filter section --></li>
-                <li data-filter=".filter-banner"><!-- filter section --></li>
-                <li data-filter=".filter-web"><!-- filter section --></li>
-                <li data-filter=".filter-social"><!-- filter section --></li>
-            </ul>            
+    <div class="projects">
+        <div class="project-card">
+         <img alt="Screenshot of Qarir Generator - Online Learning Platform" height="300" src="public\img\post\image.png" width="500"/>
+         <div class="project-content">
+          <h3>
+           LAZ BaitulMaalKu
+          </h3>
+          <p>
+           <strong>
+            Fullstack Developer | Marketing Komunikasi
+           </strong>
+           <br/>
+           January 2024 - Present
+          </p>
+          <p>
+            BaitulMaalKu adalah platform digital yang dirancang untuk mempermudah pengelolaan zakat, infaq, dan sedekah secara transparan dan efisien. Dengan antarmuka yang ramah pengguna, situs ini memungkinkan individu dan organisasi untuk menyalurkan dana sosial dengan mudah dan aman.
+           </p>
+          <div class="tags">
+           <span>
+            Express
+           </span>
+           <span>
+            NodeJS
+           </span>
+           <span>
+            Tailwinds CSS
+           </span>
+           <span>
+            Bootstrap 5
+           </span>
+           <span>
+            AnimeJS
+           </span>
+           <span>
+            Font Awesome
+           </span>
+           <span>
+            SQLite
+           </span>
+           <span>
+            Javascript
+           </span>
+           <span>
+            Figma
+           </span>
+           <span>
+            Github
+           </span>
+          </div>
+          <div class="links">
+           <a href="baitulmaalku.com">
+            Website
+           </a>
+          </div>
+         </div>
         </div>
-    </div>
+       </div>
+
     
     <div class="row portfolio-container" id="portfolio-container">
     </div>
 </section>
 <div class="line-bottom-left"></div>
+
+<!-- Contact Section Button (Font Awesome Icon) -->
+<div id="contactBtn" class="contact-btn">
+    <i class="fas fa-envelope"></i> <!-- Font Awesome envelope icon -->
+</div>
+
+<!-- The Modal (Popup) -->
+<div id="contactModal" class="contact-modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Contact Us</h2>
+        <p>Get in touch with us</p>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</div>
+
 
 <!-- Thank You Section -->
 <div class="thank">
@@ -150,5 +224,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="public/js/effect.js"></script>
     <script src="public/js/dropdown.js"></script>
+    <script src="public/js/modal.js"></script>
 </body>
 </html>
