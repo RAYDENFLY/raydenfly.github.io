@@ -1,13 +1,13 @@
 /* General body styling */
 
 @font-face {
-  font-family: 'Aldrich';
-  src: url('./font/Aldrich.ttf') format('truetype');
+  font-family: 'VALORANT';
+  src: url('../font/VALORANT.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'VALORANT';
-  src: url('./font/VALORANT.ttf') format('truetype');
+  font-family: 'Aldrich';
+  src: url('../font/Aldrich.ttf') format('truetype');
 }
 
 
