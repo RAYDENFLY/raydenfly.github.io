@@ -1,4 +1,15 @@
 /* General body styling */
+
+@font-face {
+  font-family: 'Aldrich';
+  src: url('/font/Aldrich.ttf');
+}
+
+@font-face {
+  font-family: 'VALORANT';
+  src: url('/font/VALORANT.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
