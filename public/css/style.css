@@ -2,13 +2,14 @@
 
 @font-face {
   font-family: 'Aldrich';
-  src: url('../public/font/Aldrich.ttf');
+  src: url('/public/font/Aldrich.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'VALORANT';
-  src: url('../public/font/VALORANT.ttf');
+  src: url('/public/font/VALORANT.ttf') format('truetype');
 }
+
 
 body {
   margin: 0;
