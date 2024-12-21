@@ -7,20 +7,34 @@
     <link href="https://fonts.googleapis.com/css?family=VALORANT&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="public/css/style.css">
+    <link href="public/css/responsive.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
         <div class="header">
             <img alt="Logo" height="50" src="public/img/logo/logo.png" width="50"/>
+        
+            <!-- Hamburger Icon (untuk mobile) -->
+            <div class="hamburger" id="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        
+            <!-- Navbar -->
             <div class="nav">
                 <a href="#about">ABOUT</a>
                 <a href="#vision">VISION AND APPROACH</a>
                 <a href="#skills">SKILLS & SPECIALTIES</a>
                 <a href="#work">WORK EXPERIENCE</a>
                 <a href="#portfolio">PROJECTS</a>
-
+        
+                <!-- Dropdown Menu -->
                 <div class="dropdown">
-                 <i class="fas fa-globe"></i> Language</button>
+                    <button class="dropdown-btn">
+                        <i class="fas fa-globe"></i> Language
+                    </button>
                     <div class="dropdown-content">
                         <a href="javascript:void(0)" id="language-en"><i class="fas fa-globe-americas"></i> EN</a>
                         <a href="javascript:void(0)" id="language-id"><i class="fas fa-globe-asia"></i> ID</a>
@@ -28,6 +42,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="main-content">
             <div class="text-content">
                 <h1> <!--title ada di data.js--></h1>
@@ -36,7 +51,7 @@
                    <!--deskripsi ada di data.js-->
                  </div>
                 <div class="contact-info">
-                    <a href="mailto:raydenfly84@gmail.com">
+                    <a href="mailto:azismaulana@raydenfly.my.id">
                         <i class="fas fa-envelope"></i>
                          <!--deskripsi ada di data.js-->
                     </a>
@@ -177,5 +192,6 @@
     <script src="public/js/effect.js"></script>
     <script src="public/js/dropdown.js"></script>
     <script src="public/js/modal.js"></script>
+    <script src="public/js/scrollspy.js"></script>
 </body>
 </html>

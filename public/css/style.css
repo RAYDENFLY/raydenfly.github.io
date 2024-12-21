@@ -1675,4 +1675,3 @@ canvas#particles {
   height: 100%;
   z-index: -1; /* Pastikan canvas di belakang semua elemen lain */
 }
-

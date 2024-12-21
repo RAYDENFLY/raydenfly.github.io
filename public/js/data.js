@@ -3,7 +3,7 @@ const defaultData = {
         pageTitle: "Azis Maulana Suhada",
         pageDescription: "UI UX DESIGNER | FULLSTACK DEVELOPER | GRAPHIC DESIGNER | IT SUPPORT | SOFTWARE ENGINEER",
         contactInfo: {
-            email: "raydenfly84@gmail.com",
+            email: "azismaulana@raydenfly.my.id",
             phone: "+6285719410252",
             cvLink: "https://pdfupload.io/docs/edcdf54c"
         },
@@ -121,7 +121,7 @@ const defaultData = {
         pageTitle: "Azis Maulana Suhada",
         pageDescription: "UI UX DESIGNER | FULLSTACK DEVELOPER | GRAPHIC DESIGNER | IT SUPPORT | SOFTWARE ENGINEER",
         contactInfo: {
-            email: "raydenfly84@gmail.com",
+            email: "azismaulana@raydenfly.my.id",
             phone: "+6285719410252",
             cvLink: "https://pdfupload.io/docs/edcdf54c"
         },
