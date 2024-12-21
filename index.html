@@ -7,34 +7,20 @@
     <link href="https://fonts.googleapis.com/css?family=VALORANT&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="public/css/style.css">
-    <link href="public/css/responsive.css" rel="stylesheet">
-
 </head>
 <body>
     <div class="container">
         <div class="header">
             <img alt="Logo" height="50" src="public/img/logo/logo.png" width="50"/>
-        
-            <!-- Hamburger Icon (untuk mobile) -->
-            <div class="hamburger" id="hamburger-icon">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        
-            <!-- Navbar -->
             <div class="nav">
                 <a href="#about">ABOUT</a>
                 <a href="#vision">VISION AND APPROACH</a>
                 <a href="#skills">SKILLS & SPECIALTIES</a>
                 <a href="#work">WORK EXPERIENCE</a>
                 <a href="#portfolio">PROJECTS</a>
-        
-                <!-- Dropdown Menu -->
+
                 <div class="dropdown">
-                    <button class="dropdown-btn">
-                        <i class="fas fa-globe"></i> Language
-                    </button>
+                 <i class="fas fa-globe"></i> Language</button>
                     <div class="dropdown-content">
                         <a href="javascript:void(0)" id="language-en"><i class="fas fa-globe-americas"></i> EN</a>
                         <a href="javascript:void(0)" id="language-id"><i class="fas fa-globe-asia"></i> ID</a>
@@ -42,7 +28,6 @@
                 </div>
             </div>
         </div>
-        
         <div class="main-content">
             <div class="text-content">
                 <h1> <!--title ada di data.js--></h1>
@@ -51,7 +36,7 @@
                    <!--deskripsi ada di data.js-->
                  </div>
                 <div class="contact-info">
-                    <a href="mailto:azismaulana@raydenfly.my.id">
+                    <a href="mailto:raydenfly84@gmail.com">
                         <i class="fas fa-envelope"></i>
                          <!--deskripsi ada di data.js-->
                     </a>
@@ -113,27 +98,26 @@
             <div class="work-content"></div>
         </div>
         
-
-<!-- Portfolio Section -->
-<div class="line-top-right"></div>  
-<section id="portfolio" class="portfolio">
-    <div class="section-title">
+        <div class="line-top-right"></div>
+        <section id="portfolio" class="portfolio">  
+            <div class="section-title">
+                <h1>Portfolio Title</h1>
+                <p>Description of portfolio goes here...</p>
+            </div>
+           <!-- <div class="filters"></div>  Filters kontainer -->
+            <div class="projects">
+                <div class="project-card">
+                    <img alt="Screenshot of Qarir Generator - Online Learning Platform" 
+                         height="300" src="public/img/post/image.png" width="500"/>
+                    <div class="project-content"></div>
+                    <div class="links"></div>
+                </div>
+            </div>
+        </section>
         
-    </div>
-    <div class="projects">
-        <div class="project-card">
-         <img alt="Screenshot of Qarir Generator - Online Learning Platform" height="300" src="public\img\post\image.png" width="500"/>
-         <div class="project-content">
-         
-          </div>
-          <div class="links">
-          </div>
-         </div>
-        </div>
-
     
     <div class="row portfolio-container" id="portfolio-container">
-
+    </div>
 </section>
 <div class="line-bottom-left"></div>
 
@@ -192,6 +176,5 @@
     <script src="public/js/effect.js"></script>
     <script src="public/js/dropdown.js"></script>
     <script src="public/js/modal.js"></script>
-    <script src="public/js/scrollspy.js"></script>
 </body>
 </html>

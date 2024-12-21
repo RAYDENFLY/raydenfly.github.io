@@ -172,3 +172,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (langButtonEn) langButtonEn.addEventListener('click', () => changeLanguage('en'));
     if (langButtonId) langButtonId.addEventListener('click', () => changeLanguage('id'));
 });
+
+// Set item dengan timestamp
+localStorage.setItem('data', JSON.stringify(defaultData));
+localStorage.setItem('dataExpiry', Date.now() + 100); // Set waktu kedaluwarsa
+
+// Cek kedaluwarsa
+if (Date.now() > localStorage.getItem('dataExpiry')) {
+    localStorage.removeItem('data');
+    localStorage.removeItem('dataExpiry');
+}

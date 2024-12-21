@@ -1641,7 +1641,10 @@ footer {
 .dropdown {
   position: relative;
   display: inline-block;
-  color:#ff4648;
+  color:#e32526;
+}
+.dropdown:hover{
+  color: white;
 }
 
 .dropdown-content {
