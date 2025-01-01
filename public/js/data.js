@@ -5,7 +5,7 @@ const defaultData = {
         contactInfo: {
             email: "azismaulana@raydenfly.my.id",
             phone: "+6285719410252",
-            cvLink: "https://pdfupload.io/docs/edcdf54c"
+            cvLink: "public/pdf/cvAzisMaulana.pdf"
         },
         aboutMe: {
             title: "About Me",
@@ -15,13 +15,21 @@ const defaultData = {
             ]
         },
         title: "Vision & Approach",
-        vision: "To become a skilled professional and contribute to building a better digital world.",
-        approach: [
-            "Embracing a user-centered design approach to create intuitive and visually appealing interfaces.",
-            "Leveraging both front-end and back-end development skills to build seamless, full-stack solutions.",
-            "Continuously staying updated with the latest trends and technologies, ensuring I deliver modern and efficient solutions.",
-            "Collaborating with teams and clients to understand their needs and create tailored solutions that exceed expectations.",
-            "Maintaining a strong focus on problem-solving and delivering high-quality, scalable projects."
+        categories: [
+            {
+                buttonText: "Vision",
+                vision: "To become a skilled professional and contribute to building a better digital world."
+            },
+            {
+                buttonText: "Approach",
+                approach: [
+                    "Embracing a user-centered design approach to create intuitive and visually appealing interfaces.",
+                    "Leveraging both front-end and back-end development skills to build seamless, full-stack solutions.",
+                    "Continuously staying updated with the latest trends and technologies, ensuring I deliver modern and efficient solutions.",
+                    "Collaborating with teams and clients to understand their needs and create tailored solutions that exceed expectations.",
+                    "Maintaining a strong focus on problem-solving and delivering high-quality, scalable projects."
+                ]
+            }
         ],
         skillsAndSpecialties: {
             title: "SKILLS & SPECIALTIES",
@@ -133,13 +141,21 @@ const defaultData = {
             ]
         },
         title: "Visi & Pendekatan",
-        vision: "Untuk menjadi seorang profesional yang terampil dan berkontribusi dalam membangun dunia digital yang lebih baik.",
-        approach: [
-            "Menerapkan pendekatan desain berpusat pada pengguna untuk menciptakan antarmuka yang intuitif dan menarik secara visual.",
-            "Memanfaatkan keterampilan pengembangan front-end dan back-end untuk membangun solusi full-stack yang mulus.",
-            "Terus memperbarui pengetahuan dengan tren dan teknologi terbaru, memastikan solusi yang saya berikan modern dan efisien.",
-            "Berkolaborasi dengan tim dan klien untuk memahami kebutuhan mereka dan menciptakan solusi yang disesuaikan untuk melebihi harapan.",
-            "Mempertahankan fokus yang kuat pada pemecahan masalah dan memberikan proyek yang berkualitas tinggi dan skalabel."
+        categories: [
+            {
+                buttonText: "Visi",
+                vision: "Untuk menjadi seorang profesional yang terampil dan berkontribusi dalam membangun dunia digital yang lebih baik."
+            },
+            {
+                buttonText: "Pendekatan",
+                approach: [
+                    "Menerapkan pendekatan desain berpusat pada pengguna untuk menciptakan antarmuka yang intuitif dan menarik secara visual.",
+                    "Memanfaatkan keterampilan pengembangan front-end dan back-end untuk membangun solusi full-stack yang mulus.",
+                    "Terus memperbarui pengetahuan dengan tren dan teknologi terbaru, memastikan solusi yang saya berikan modern dan efisien.",
+                    "Berkolaborasi dengan tim dan klien untuk memahami kebutuhan mereka dan menciptakan solusi yang disesuaikan untuk melebihi harapan.",
+                    "Mempertahankan fokus yang kuat pada pemecahan masalah dan memberikan proyek yang berkualitas tinggi dan skalabel."
+                ]
+            }
         ],
         skillsAndSpecialties: {
             title: "KETERAMPILAN & SPESIALISASI",

@@ -40,19 +40,39 @@ document.addEventListener('DOMContentLoaded', () => {
             if (aboutTitle) aboutTitle.insertAdjacentHTML('afterend', aboutContent);
         }
 
-        // Update Vision and Approach
-        const visionSection = document.querySelector('.visionaproach');
-        if (visionSection) {
-            const visionTitle = visionSection.querySelector('h1');
-            const visionContent = visionSection.querySelector('.content');
-            const approachList = visionSection.querySelector('.list ol');
-
+        const visionApproachSection = document.querySelector('.visionaproach');
+        if (visionApproachSection) {
+            const visionTitle = document.querySelector('#vision h1');
             if (visionTitle) visionTitle.innerText = selectedData.title;
-            if (visionContent) visionContent.innerText = selectedData.vision;
-            if (approachList) {
-                approachList.innerHTML = selectedData.approach.map(item => `<li>${item}</li>`).join('');
-            }
+        
+            visionApproachSection.innerHTML = selectedData.categories.map(category => {
+                if (category.vision) {
+                    return `
+                        <div class="vision-box">
+                            <div class="button-container">
+                                <button class="button vision-ipad">${category.buttonText}</button>
+                            </div>
+                             <div class="content">
+                                <p>${category.vision}</p>
+                            </div>
+                        </div>
+                    `;
+                } else if (category.approach) {
+                    const approachList = category.approach.map(item => `<li>${item}</li>`).join('');
+                    return `
+                        <div class="approach-box">
+                            <div class="button-container">
+                                <button class="button approach-ipad">${category.buttonText}</button>
+                            </div>
+                            <div class="list">
+                                <ol>${approachList}</ol>
+                            </div>
+                        </div>
+                    `;
+                }
+            }).join('');
         }
+        
 
         // Update Skills & Specialties section
         const skillsSection = document.querySelector('.skills-section');
