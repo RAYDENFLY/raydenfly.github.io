@@ -21,13 +21,6 @@ document.querySelectorAll('.nav a').forEach((link) => {
 });
 
 
-// Red Line Animation
-anime({
-    targets: '.red-line',
-    width: ['0%', '55%'],
-    easing: 'easeInOutQuad',
-    duration: 1000,
-});
 
 // Parallax Scroll Effect
 document.addEventListener('scroll', () => {

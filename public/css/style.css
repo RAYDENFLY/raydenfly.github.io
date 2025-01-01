@@ -125,6 +125,9 @@ body {
   height: 570px;
 }
 
+.text-content .red-line{
+  width: 55%;
+}
 /* New lines and About Me section */
 .line-top-right {
   width: 150px;

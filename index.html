@@ -7,20 +7,29 @@
     <link href="https://fonts.googleapis.com/css?family=VALORANT&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/responsive.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
             <img alt="Logo" height="50" src="public/img/logo/logo.png" width="50"/>
+            
+            <!-- Tombol Hamburger -->
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
             <div class="nav">
                 <a href="#about">ABOUT</a>
                 <a href="#vision">VISION AND APPROACH</a>
                 <a href="#skills">SKILLS & SPECIALTIES</a>
                 <a href="#work">WORK EXPERIENCE</a>
                 <a href="#portfolio">PROJECTS</a>
-
+                
                 <div class="dropdown">
-                 <i class="fas fa-globe"></i> Language</button>
+                    <i class="fas fa-globe"></i> Language
                     <div class="dropdown-content">
                         <a href="javascript:void(0)" id="language-en"><i class="fas fa-globe-americas"></i> EN</a>
                         <a href="javascript:void(0)" id="language-id"><i class="fas fa-globe-asia"></i> ID</a>
@@ -28,10 +37,11 @@
                 </div>
             </div>
         </div>
+        
         <div class="main-content">
             <div class="text-content">
                 <h1> <!--title ada di data.js--></h1>
-                <div class="red-line"></div>
+                <div class="red-line red-line-main"></div>
                 <div class="subtitle">
                    <!--deskripsi ada di data.js-->
                  </div>
@@ -176,5 +186,6 @@
     <script src="public/js/effect.js"></script>
     <script src="public/js/dropdown.js"></script>
     <script src="public/js/modal.js"></script>
+    <script src="public/js/hamburger.js"></script>
 </body>
 </html>

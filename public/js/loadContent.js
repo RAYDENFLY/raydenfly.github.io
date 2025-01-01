@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return `
                     <div class="skills-box">
                         <div class="button-container">
-                            <button class="button">${category.buttonText}</button>
+                            <button class="button skills-ipad">${category.buttonText}</button>
                         </div>
                         <ul>${skillsList}</ul>
                         <div class="icons">${iconsList}</div>

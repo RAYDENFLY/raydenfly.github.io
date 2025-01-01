@@ -1,0 +1,835 @@
+@media (max-width: 1370px){
+    .visionaproach{
+        width: 92%;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        width: 92%;
+    }
+}
+@media (max-width: 1600px){
+    .visionaproach{
+        width: 93%;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        width: 93%;
+    }
+}
+@media (max-width: 1768px){
+    .visionaproach{
+        width: 94%;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        width: 94%;
+    }
+}
+@media (max-width: 1680px){
+    .visionaproach{
+        width: 94%;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        width: 94%;
+    }
+}
+@media (max-width: 1290px){
+    .visionaproach{
+        width: 91%;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        width: 91%;
+    }
+}
+@media (max-width: 1134px) {
+    .main-content {
+        display: flex;
+        flex-direction: column; /* Susun elemen menjadi kolom */
+        align-items: center; /* Pusatkan elemen */
+        text-align: center; /* Pusatkan teks */
+    }
+
+    .profile-pic {
+        order: -1; /* Pastikan foto tampil pertama */
+        margin: 0 auto; /* Pusatkan gambar */
+        margin-bottom: 40px; /* Tambahkan jarak antara gambar dan teks */
+    }
+
+    .text-content {
+        text-align: center; /* Pusatkan teks */
+    }
+    .text-content h1 {
+        margin-bottom: 20px;
+    }
+
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 80%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        display: flex; /* Gunakan Flexbox */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        justify-content: center; /* Pusatkan elemen secara vertikal */
+        text-align: center; /* Pusatkan teks jika ada */
+        gap: 10px; /* Tambahkan jarak antar elemen tombol */
+    }
+    .visionaproach{
+        max-width: 886px;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        max-width: 886px;
+    }
+}
+
+@media (max-width: 1120px) {
+    /* Header dan Navbar */
+    .header {
+        display: flex;
+        justify-content: space-between; /* Mengatur elemen di kiri dan kanan */
+        align-items: center;
+        padding: 10px 20px;
+        color: white;
+    }
+
+    @media (max-width: 1120px) {
+        .nav {
+            display: none;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #1a1a1a;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+    }
+    .nav.active {
+        display: flex; /* Tampilkan menu saat aktif */
+        opacity: 1; /* Ubah opacity menjadi 1 saat menu terbuka */
+        transform: translateY(0); /* Gerakkan menu ke posisi normal */
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px; /* Ukuran teks tombol */
+        margin: 10px 0; /* Tambahkan jarak antar tombol */
+        transition: color 0.3s ease, background-color 0.3s ease; /* Efek transisi */
+        padding: 10px 20px; /* Tambahkan padding untuk area hover */
+        border-radius: 5px; /* Tambahkan efek sudut melengkung */
+    }
+
+    .nav a:hover {
+        background-color: #F02626; /* Warna latar belakang merah saat hover */
+        color: white; /* Pastikan teks tetap putih */
+    }
+
+    /* Hamburger Menu */
+    .hamburger-menu {
+        display: flex; /* Tampilkan tombol hamburger */
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        z-index: 1100; /* Pastikan di atas elemen lain */
+    }
+
+    .hamburger-menu span {
+        width: 30px;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        transition: transform 0.3s ease, background-color 0.3s ease; /* Transisi hanya pada transformasi */
+    }
+
+    /* Hamburger aktif */
+    .hamburger-menu.active span {
+        background: #F02626; /* Ubah warna batang saat menu aktif */
+    }
+
+    /* Efek saat hamburger aktif */
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg); /* Putar garis pertama */
+        position: relative;
+        top: 8px; /* Posisikan sedikit lebih ke bawah */
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0; /* Sembunyikan garis kedua */
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg); /* Putar garis ketiga */
+        position: relative;
+        top: -8px; /* Posisikan sedikit lebih ke atas */
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #e32526;
+    font-size: 24px;
+}
+
+/* Dropdown Content */
+.dropdown .dropdown-content {
+    display: none; /* Sembunyikan dropdown secara default */
+    position: absolute;
+    top: 100%; /* Letakkan dropdown tepat di bawah tombol */
+    left: 0;
+    background-color: #333;
+    min-width: 160px; /* Lebar minimum untuk dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan di bawah dropdown */
+    z-index: 1100; /* Pastikan dropdown berada di atas elemen lainnya */
+    padding: 12px 16px;
+    border-radius: 5px;
+    opacity: 0; /* Sembunyikan dropdown dengan opacity 0 */
+    transform: translateY(-10px); /* Mulai dengan posisi lebih tinggi */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi halus */
+}
+
+/* Tampilkan dropdown saat aktif */
+.dropdown.active .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 26px;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    margin-left: -15px;
+}
+
+
+.dropdown .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 24px;
+    
+}
+
+.dropdown .dropdown-content a:hover {
+    background-color: #F02626; /* Warna latar belakang saat hover */
+}
+
+}
+
+@media (max-width: 1024px){
+    .visionaproach{
+        max-width: 865px;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        max-width: 865px;
+    }
+}
+@media (max-width: 993px){
+    .visionaproach{
+        max-width: 846px;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        max-width: 846px;
+    }
+}
+
+@media (max-width: 954px){
+    .visionaproach{
+        max-width: 816px;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        max-width: 816px;
+    }
+}
+@media (max-width: 912px){
+    .visionaproach{
+        max-width: 763px;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        max-width: 763px;
+    }
+    .skills-box{
+        width: 57%;
+    }
+    .skills-section {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke bawah */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+    }
+    .button {
+        background-color: #F02626;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        padding: 13px 81px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+    
+}
+}
+
+@media (max-width: 820px){
+    .visionaproach{
+        max-width: 620px;
+    }
+    .skills-section{
+        flex-wrap: revert;
+    }
+    .workexperience{
+        max-width: 620px;
+    }
+    .skills-box{
+        width: 57%;
+    }
+    .skills-section {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke bawah */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+    }
+    .button {
+        background-color: #F02626;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        padding: 13px 81px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+    
+}
+@media (max-width: 550px){
+    .text-content {
+        text-align: center; /* Pusatkan teks */
+    }
+    .text-content h1 {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    .text-content .subtitle {
+        font-size: 15px;
+        margin-bottom: 20px;
+        max-width: 398pxpx;
+    }
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 80%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        display: flex; /* Menggunakan Flexbox */
+        flex-wrap: wrap; /* Izinkan elemen membungkus ke baris berikutnya jika diperlukan */
+        align-items: center; /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        gap: 10px; /* Tambahkan jarak antar elemen */
+        text-align: center; /* Pusatkan teks */
+        font-size: 14px; /* Ukuran font default */
+    }
+    
+    .contact-info a {
+        display: flex; /* Jadikan tautan sebagai Flexbox */
+        align-items: center; /* Pusatkan ikon dan teks di tengah */
+        text-decoration: none; /* Hilangkan garis bawah */
+        color: inherit; /* Warna mengikuti konteks */
+        font-size: inherit; /* Ikuti ukuran font dari .contact-info */
+        padding: 10px; /* Tambahkan ruang dalam */
+        border: 1px solid #ccc; /* Opsional: Tambahkan border */
+        border-radius: 5px; /* Opsional: Beri sudut melengkung */
+        text-align: center; /* Pusatkan teks */
+        box-sizing: border-box; /* Pastikan padding tidak memengaruhi lebar total */
+    }
+    
+    .contact-info i {
+        font-size: 20px; /* Ukuran ikon */
+        margin-bottom: 5px; /* Jarak antara ikon dan deskripsi */
+    }
+    
+    .visionaproach{
+        max-width: 398px;
+    }
+    .skills-section {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke bawah */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+    }
+    
+    .button {
+        font-size: 16px; /* Ukuran font lebih kecil untuk layar kecil */
+        padding: 10px 80px; /* Sesuaikan padding */
+    }
+    .skills-box{
+        width: 85%;
+    }
+
+    .workexperience {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke atas dan bawah */
+        align-items: center; /* Opsional: Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+        max-width: 398px; /* Batas lebar maksimal */
+        margin: 0 auto; /* Pusatkan kontainer secara horizontal */
+    }
+    .work-content {
+        flex-direction: column;
+    }
+    .work-column{
+        width: 105%;
+        margin-bottom: 20px;
+    }
+    
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 91%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .project-card{
+        max-width: 362px;
+    }
+    .profile-pic img{
+        width: 137px;
+        height: 179px;
+    }
+
+    .about-section p{
+        font-size: 15px;
+    }
+    .content {
+        font-size: 15px;
+    }
+    .list {
+        font-size: 15px;
+    }
+    .skills-box ul{
+        font-size: 15px;
+    }
+    .skills-box ul li{
+        font-size: 15px;
+    }
+    .work-column ul li{
+        font-size: 15px;
+    }
+    .portfolio p{
+        font-size: 15px;
+    }
+}
+@media (max-width: 450px){
+    .text-content {
+        text-align: center; /* Pusatkan teks */
+    }
+    .text-content h1 {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    .text-content .subtitle {
+        font-size: 15px;
+        margin-bottom: 20px;
+        max-width: 325px;
+    }
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 80%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        display: flex; /* Menggunakan Flexbox */
+        flex-wrap: wrap; /* Izinkan elemen membungkus ke baris berikutnya jika diperlukan */
+        align-items: center; /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        gap: 10px; /* Tambahkan jarak antar elemen */
+        text-align: center; /* Pusatkan teks */
+        font-size: 14px; /* Ukuran font default */
+    }
+    
+    .contact-info a {
+        display: flex; /* Jadikan tautan sebagai Flexbox */
+        align-items: center; /* Pusatkan ikon dan teks di tengah */
+        text-decoration: none; /* Hilangkan garis bawah */
+        color: inherit; /* Warna mengikuti konteks */
+        font-size: inherit; /* Ikuti ukuran font dari .contact-info */
+        padding: 10px; /* Tambahkan ruang dalam */
+        border: 1px solid #ccc; /* Opsional: Tambahkan border */
+        border-radius: 5px; /* Opsional: Beri sudut melengkung */
+        text-align: center; /* Pusatkan teks */
+        box-sizing: border-box; /* Pastikan padding tidak memengaruhi lebar total */
+    }
+    
+    .contact-info i {
+        font-size: 20px; /* Ukuran ikon */
+        margin-bottom: 5px; /* Jarak antara ikon dan deskripsi */
+    }
+    
+    .visionaproach{
+        max-width: 271px;
+    }
+    .skills-section {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke bawah */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+    }
+    
+    .button {
+        font-size: 16px; /* Ukuran font lebih kecil untuk layar kecil */
+        padding: 10px 80px; /* Sesuaikan padding */
+    }
+    .skills-box{
+        width: 85%;
+    }
+
+    .workexperience {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke atas dan bawah */
+        align-items: center; /* Opsional: Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+        max-width: 271px; /* Batas lebar maksimal */
+        margin: 0 auto; /* Pusatkan kontainer secara horizontal */
+    }
+    .work-content {
+        flex-direction: column;
+    }
+    .work-column{
+        width: 105%;
+        margin-bottom: 20px;
+    }
+    
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 91%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .project-card{
+        max-width: 362px;
+    }
+    .profile-pic img{
+        width: 137px;
+        height: 179px;
+    }
+
+    .about-section p{
+        font-size: 15px;
+    }
+    .content {
+        font-size: 15px;
+    }
+    .list {
+        font-size: 15px;
+    }
+    .skills-box ul{
+        font-size: 15px;
+    }
+    .skills-box ul li{
+        font-size: 15px;
+    }
+    .work-column ul li{
+        font-size: 15px;
+    }
+    .portfolio p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px){
+    .text-content {
+        text-align: center; /* Pusatkan teks */
+    }
+    .text-content h1 {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    .text-content .subtitle {
+        font-size: 13px;
+        margin-bottom: 20px;
+        max-width: 325px;
+    }
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 80%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        display: flex; /* Menggunakan Flexbox */
+        flex-wrap: wrap; /* Izinkan elemen membungkus ke baris berikutnya jika diperlukan */
+        align-items: center; /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        gap: 10px; /* Tambahkan jarak antar elemen */
+        text-align: center; /* Pusatkan teks */
+        font-size: 13px; /* Ukuran font default */
+    }
+    
+    .contact-info a {
+        display: flex; /* Jadikan tautan sebagai Flexbox */
+        align-items: center; /* Pusatkan ikon dan teks di tengah */
+        text-decoration: none; /* Hilangkan garis bawah */
+        color: inherit; /* Warna mengikuti konteks */
+        font-size: inherit; /* Ikuti ukuran font dari .contact-info */
+        padding: 10px; /* Tambahkan ruang dalam */
+        border: 1px solid #ccc; /* Opsional: Tambahkan border */
+        border-radius: 5px; /* Opsional: Beri sudut melengkung */
+        text-align: center; /* Pusatkan teks */
+        box-sizing: border-box; /* Pastikan padding tidak memengaruhi lebar total */
+    }
+    
+    .contact-info i {
+        font-size: 20px; /* Ukuran ikon */
+        margin-bottom: 5px; /* Jarak antara ikon dan deskripsi */
+    }
+    
+    .visionaproach{
+        max-width: 236px;
+    }
+    .skills-section {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke bawah */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        gap: 0px; /* Tambahkan jarak antar elemen */
+        margin-top: -35px;
+    }
+    
+    .button {
+        font-size: 13px; /* Ukuran font lebih kecil untuk layar kecil */
+        padding: 10px 80px; /* Sesuaikan padding */
+    }
+    .skills-box{
+        width: 85%;
+    }
+
+    .workexperience {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke atas dan bawah */
+        align-items: center; /* Opsional: Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+        max-width: 236px; /* Batas lebar maksimal */
+        margin: 0 auto; /* Pusatkan kontainer secara horizontal */
+    }
+    .work-content {
+        flex-direction: column;
+    }
+    .work-column{
+        width: 105%;
+        margin-bottom: 60px;
+        margin-top: -35px;
+        gap: 10px;
+        max-height: 996px;
+    }
+    
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 91%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .project-card{
+        max-width: 316px;
+    }
+    .profile-pic img{
+        width: 137px;
+        height: 179px;
+    }
+
+    .about-section p{
+        font-size: 13px;
+    }
+    .content {
+        font-size: 13px;
+    }
+    .list {
+        font-size: 13px;
+    }
+    .skills-box ul{
+        font-size: 13px;
+    }
+    .skills-box ul li{
+        font-size: 13px;
+    }
+    .work-column ul li{
+        font-size: 13px;
+    }
+    .portfolio p{
+        font-size: 13px;
+    }
+    .icons img{
+        height: 35px;
+        width: 35px;
+    }
+}
+@media (max-width: 350px){
+    .text-content {
+        text-align: center; /* Pusatkan teks */
+    }
+    .text-content h1 {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    .text-content .subtitle {
+        font-size: 13px;
+        margin-bottom: 20px;
+        max-width: 202px;
+    }
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 80%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        display: flex; /* Menggunakan Flexbox */
+        flex-wrap: wrap; /* Izinkan elemen membungkus ke baris berikutnya jika diperlukan */
+        align-items: center; /* Pusatkan secara vertikal */
+        justify-content: center; /* Pusatkan secara horizontal */
+        gap: 10px; /* Tambahkan jarak antar elemen */
+        text-align: center; /* Pusatkan teks */
+        font-size: 13px; /* Ukuran font default */
+    }
+    
+    .contact-info a {
+        display: flex; /* Jadikan tautan sebagai Flexbox */
+        align-items: center; /* Pusatkan ikon dan teks di tengah */
+        text-decoration: none; /* Hilangkan garis bawah */
+        color: inherit; /* Warna mengikuti konteks */
+        font-size: inherit; /* Ikuti ukuran font dari .contact-info */
+        padding: 10px; /* Tambahkan ruang dalam */
+        border: 1px solid #ccc; /* Opsional: Tambahkan border */
+        border-radius: 5px; /* Opsional: Beri sudut melengkung */
+        text-align: center; /* Pusatkan teks */
+        box-sizing: border-box; /* Pastikan padding tidak memengaruhi lebar total */
+    }
+    
+    .contact-info i {
+        font-size: 20px; /* Ukuran ikon */
+        margin-bottom: 5px; /* Jarak antara ikon dan deskripsi */
+    }
+    
+    .visionaproach{
+        max-width: 202px;
+    }
+    .skills-section {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke bawah */
+        align-items: center; /* Pusatkan elemen secara horizontal */
+        gap: 0px; /* Tambahkan jarak antar elemen */
+        margin-top: -35px;
+    }
+    
+    .button {
+        font-size: 13px; /* Ukuran font lebih kecil untuk layar kecil */
+        padding: 10px 80px; /* Sesuaikan padding */
+    }
+    .skills-box{
+        width: 85%;
+    }
+
+    .workexperience {
+        display: flex; /* Aktifkan Flexbox */
+        flex-direction: column; /* Atur elemen berjajar ke atas dan bawah */
+        align-items: center; /* Opsional: Pusatkan elemen secara horizontal */
+        gap: 20px; /* Tambahkan jarak antar elemen */
+        max-width: 202px; /* Batas lebar maksimal */
+        margin: 0 auto; /* Pusatkan kontainer secara horizontal */
+    }
+    .work-content {
+        flex-direction: column;
+    }
+    .work-column{
+        width: 105%;
+        margin-bottom: 60px;
+        margin-top: -35px;
+        gap: 10px;
+        max-height: 996px;
+    }
+    
+    .text-content .red-line {
+        border: 1px solid #F02626;
+        width: 91%; /* Atur lebar garis (sesuaikan sesuai kebutuhan) */
+        margin: 0 auto; /* Pusatkan garis */
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .project-card{
+        max-width: 316px;
+    }
+    .profile-pic img{
+        width: 137px;
+        height: 179px;
+    }
+
+    .about-section p{
+        font-size: 13px;
+    }
+    .content {
+        font-size: 13px;
+    }
+    .list {
+        font-size: 13px;
+    }
+    .skills-box ul{
+        font-size: 13px;
+    }
+    .skills-box ul li{
+        font-size: 13px;
+    }
+    .work-column ul li{
+        font-size: 13px;
+    }
+    .portfolio p{
+        font-size: 13px;
+    }
+    .icons img{
+        height: 35px;
+        width: 35px;
+    }
+}
