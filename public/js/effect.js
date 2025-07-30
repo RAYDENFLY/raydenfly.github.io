@@ -84,40 +84,42 @@ document.addEventListener('mousemove', (e) => {
 
 // Background Particle Animation
 const canvas = document.getElementById('particles');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+if (canvas) {
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-const particlesArray = [];
-const numberOfParticles = 100;
+    const particlesArray = [];
+    const numberOfParticles = 100;
 
-function createParticles() {
-    for (let i = 0; i < numberOfParticles; i++) {
-        particlesArray.push({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            size: Math.random() * 2,
-            speedX: (Math.random() - 0.5) * 2,
-            speedY: (Math.random() - 0.5) * 2,
-        });
+    function createParticles() {
+        for (let i = 0; i < numberOfParticles; i++) {
+            particlesArray.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2,
+                speedX: (Math.random() - 0.5) * 2,
+                speedY: (Math.random() - 0.5) * 2,
+            });
+        }
     }
+
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particlesArray.forEach((p) => {
+            p.x += p.speedX;
+            p.y += p.speedY;
+            if (p.x < 0 || p.x > canvas.width) p.speedX = -p.speedX;
+            if (p.y < 0 || p.y > canvas.height) p.speedY = -p.speedY;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+            ctx.fillStyle = '#ff4655';
+            ctx.fill();
+        });
+        requestAnimationFrame(animateParticles);
+    }
+
+    createParticles();
+    animateParticles();
 }
-
-function animateParticles() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    particlesArray.forEach((p) => {
-        p.x += p.speedX;
-        p.y += p.speedY;
-        if (p.x < 0 || p.x > canvas.width) p.speedX = -p.speedX;
-        if (p.y < 0 || p.y > canvas.height) p.speedY = -p.speedY;
-
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = '#ff4655';
-        ctx.fill();
-    });
-    requestAnimationFrame(animateParticles);
-}
-
-createParticles();
-animateParticles();

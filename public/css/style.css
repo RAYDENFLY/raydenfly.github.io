@@ -1002,10 +1002,15 @@ body, html {
   position: relative;
   bottom: -20;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
 .icons img {
-  margin: 0 10px;
+  margin: 5px;
+  max-width: 40px;
+  height: auto;
 }
 
 
@@ -1105,19 +1110,59 @@ body, html {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap !important;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  padding: 20px 20px 20px 20px;
+  scrollbar-width: thin;
+  scrollbar-color: #F02626 #1a1a1a;
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box;
 }
+
+.projects::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+  background: #F02626;
+  border-radius: 4px;
+}
+
+.projects::-webkit-scrollbar-thumb:hover {
+  background: #d60101;
+}
+
 .project-card {
   background-color: #d3d3d3;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  max-width: 450px;
-  width: 100%;
+  min-width: 350px !important;
+  max-width: 350px !important;
+  width: 350px !important;
   display: flex;
   flex-direction: column;
+  /* height: 683px !important; */
+  /* min-height: 683px !important; */
+  /* max-height: 683px !important; */
+  flex: 0 0 350px !important;
+  flex-shrink: 0 !important;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
 
 .project-card p {
@@ -1132,23 +1177,12 @@ body, html {
 .project-card h3 {
   color: black;
 }
-.image-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  overflow: hidden;
-}
-.image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .project-content {
   padding: 20px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project-content h3 {
   margin: 0;
@@ -1198,10 +1232,97 @@ body, html {
   border-radius: 5px;
   font-size: 0.9em;
 }
+/* Ensure horizontal scrolling for all devices above 775px */
+@media (min-width: 776px) {
+  .projects {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 20px;
+    justify-content: flex-start !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 20px 20px 20px 20px !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+    min-height: 616px !important;
+    height: auto !important;
+    scrollbar-width: thin !important;
+    scrollbar-color: #F02626 #1a1a1a !important;
+    box-sizing: border-box !important;
+  }
+  
+  .projects::-webkit-scrollbar {
+    height: 8px !important;
+  }
+
+  .projects::-webkit-scrollbar-track {
+    background: #1a1a1a !important;
+    border-radius: 4px !important;
+  }
+
+  .projects::-webkit-scrollbar-thumb {
+    background: #F02626 !important;
+    border-radius: 4px !important;
+  }
+
+  .projects::-webkit-scrollbar-thumb:hover {
+    background: #d60101 !important;
+  }
+  
+  .project-card {
+    min-width: 350px !important;
+    width: 350px !important;
+    max-width: 350px !important;
+    height: 566px !important;
+    min-height: 566px !important;
+    max-height: 566px !important;
+    flex: 0 0 350px !important;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+  }
+}
+
+/* Small screen layout for 740px and below */
+@media (max-width: 740px) {
+  .projects {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center;
+      overflow-x: visible;
+      overflow-y: visible;
+      flex-wrap: wrap;
+  }
+  
+  .project-card {
+      width: 90% !important;
+      max-width: 350px !important;
+      min-width: 280px !important;
+      /* height: 518px !important; */
+      /* min-height: 518px !important; */
+      /* max-height: 518px !important; */
+      flex: none !important;
+  }
+}
+
+/* Mobile layout for 768px and below */
 @media (max-width: 768px) {
   .projects {
-      flex-direction: column;
-      align-items: center;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      overflow-x: visible;
+      overflow-y: visible;
+      flex-wrap: wrap;
+      padding: 20px !important;
+  }
+  
+  .project-card {
+      width: 90% !important;
+      max-width: 400px !important;
+      min-width: 300px !important;
+      flex: none !important;
+      margin: 0 auto 20px auto !important;
   }
 }
 
@@ -1211,128 +1332,6 @@ body, html {
   color: #F02626;
   font-weight: bold;
 }
-/* Styling for the Contact Us Logo (Font Awesome Icon) */
-.contact-btn {
-  position: fixed;
-  right: 30px; /* Align to the right */
-  bottom: 20px; /* Align to the bottom */
-  background-color: #F02626; /* Background color for the icon */
-  border-radius: 50%; /* Circular button */
-  padding: 15px;
-  cursor: pointer;
-  z-index: 9999; /* Ensure it's above other content */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.contact-btn i {
-  color: #fff; /* White color for the icon */
-  font-size: 30px; /* Icon size */
-}
-
-/* Hover effect on the button */
-.contact-btn:hover {
-  background-color: #f80101; /* Darken the button on hover */
-}
-
-/* The Modal (Popup) */
-.contact-modal {
-  display: none; /* Initially hidden */
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Black with opacity */
-  padding-top: 20px;
-  overflow: auto;
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #222; /* Dark background */
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 50%;
-  border-radius: 10px;
-  color: #fff;
-  font-family: 'Valorant', sans-serif;
-}
-
-.modal-content p{
-  font-family: 'Aldrich', sans-serif;
-}
-.modal-content form{
-  font-family: 'Aldrich', sans-serif;
-}
-
-/* Close Button */
-.close-btn {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: #F02626;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Form Styling */
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
-input, textarea {
-  padding: 10px;
-  margin-top: 5px;
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #555;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-textarea {
-  resize: vertical;
-  height: 150px;
-}
-
-button.submit-btn {
-  background-color: #F02626;
-  border: none;
-  padding: 12px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  color: #fff;
-}
-
-button.submit-btn:hover {
-  background-color: rgb(255, 0, 13);
-}
-
-@media screen and (max-width: 768px) {
-  .modal-content {
-      width: 80%;
-  }
-}
-
-
 
 footer {
   margin-top: 40px;
@@ -1680,4 +1679,47 @@ canvas#particles {
   width: 100%;
   height: 100%;
   z-index: -1; /* Pastikan canvas di belakang semua elemen lain */
+}
+
+/* Media query untuk icons yang terpotong di layar kecil */
+@media (max-width: 824px) {
+  .icons {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    max-width: 100%;
+    gap: 8px;
+  }
+  
+  .icons img {
+    margin: 3px;
+    max-width: 35px;
+    height: auto;
+  }
+}
+
+/* Media query untuk work experience di 693px */
+@media (max-width: 693px) {
+  .work-content {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    font-family: 'Aldrich', sans-serif;
+    border-radius: 10px;
+  }
+  
+  .work-column {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+  
+  .work-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #F02626;
+    margin: 20px 0;
+  }
 }

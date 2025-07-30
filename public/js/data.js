@@ -10,8 +10,8 @@ const defaultData = {
         aboutMe: {
             title: "About Me",
             description: [
-                "As a passionate individual in the field of technology, I have a strong interest in Graphic Design, Front-End Development, Back-End Development, and IT Support. During my studies in computer science, I actively participated in various software development projects, which have deepened my understanding of fundamental programming principles and technological innovation.",
-                "During my studies in computer science, I actively participated in various software development projects, which have deepened my understanding of fundamental programming principles and technological innovation."
+                "I'm a tech enthusiast with a strong interest in Graphic Design, Front-End and Back-End Development, and IT Support. I've been actively involved in various software development projects, which have deepened my understanding of programming principles and modern technology applications.",
+                "With a background in Computer Science, I continuously sharpen my technical and creative skills through hands-on practice, learning new tools, and collaborating in team environments."
             ]
         },
         title: "Vision & Approach",
@@ -37,17 +37,22 @@ const defaultData = {
                 {
                     buttonText: "Technical Skills:",
                     skills: [
-                        "Front-End Development: Proficient in creating interactive and responsive web pages using HTML, CSS, and JavaScript.",
-                        "Back-End Development: Experienced in building server-side applications with Node.js, Python, Express.js, and JavaScript.",
-                        "Database Management: Knowledgeable in working with databases like MongoDB, MySQL, and SQLite to store, retrieve, and manage data.",
-                        "Computer Troubleshooting: Skilled in diagnosing and resolving hardware and software issues, ensuring smooth system performance."
+                        "Front-End Development: Proficient in creating interactive and responsive web pages using HTML, CSS, JavaScript, as well as modern frameworks like React.js, Next.js, and Flutter.",
+                        "Back-End Development: Experienced in building server-side applications with Node.js, Express.js, Python, JavaScript, and Laravel.",
+                        "Desktop App Development: Able to build cross-platform desktop applications using Electron.",
+                        "Database Management: Knowledgeable in working with databases such as MongoDB, MySQL, and SQLite to store, retrieve, and manage data.",
+                        "Computer Troubleshooting: Skilled in diagnosing and resolving hardware and software issues to ensure smooth system performance."
                     ],
                     icons: [
                         "public/img/logo/icon/nodejs.png",
                         "public/img/logo/icon/python.png",
                         "public/img/logo/icon/js.png",
                         "public/img/logo/icon/mysql.png",
-                        "public/img/logo/icon/mongodb.png"
+                        "public/img/logo/icon/mongodb.png",
+                        "public/img/logo/icon/flutter.svg",
+                        "public/img/logo/icon/laravel.png",
+                        "public/img/logo/icon/nextjs.png",
+                        "public/img/logo/icon/reactjs.png"
                     ]
                 },
                 {
@@ -102,21 +107,16 @@ const defaultData = {
             },
             projects: [
                 {
-                    title: "LAZ BaitulMaalKu",
-                    company: "Fullstack Developer | Marketing Communication",
-                    date: "January 2024 - Present",
-                    description: "BaitulMaalKu is a digital platform designed to streamline the management of zakat, infaq, and charity donations with transparency and efficiency. The site provides an easy and secure interface for individuals and organizations to donate social funds.",
+                    title: "Company Profile",
+                    company: "LAZ BaitulMaalKu",
+                    date: "January 2024",
+                    description: "Official website presenting the organization's profile, services, and structure.",
                     technologies: [
-                        "Express",
                         "NodeJS",
                         "Tailwind CSS",
-                        "Bootstrap 5",
                         "AnimeJS",
                         "Font Awesome",
-                        "SQLite",
-                        "Javascript",
-                        "Figma",
-                        "Github"
+                        "Javascript"
                     ],
                     link: "https://baitulmaalku.com",
                     imageUrl: "public/img/post/image.png"
@@ -124,7 +124,7 @@ const defaultData = {
                 {
                     title: "Donation BaitulMaalKu",
                     company: "LAZ BaitulMaalKu",
-                    date: "2025",
+                    date: "July 2025",
                     description: "A donation management system for BaitulMaalKu, facilitating easy and transparent donation processes for various social causes.",
                     technologies: [
                         "HTML",
@@ -140,11 +140,10 @@ const defaultData = {
                 {
                     title: "Business Planning App",
                     company: "Fullstack Developer",
-                    date: "2025",
+                    date: "July 2025",
                     description: "A business planning tool for SMEs. Feasibility analysis, financial projections, and realistic targets.",
                     technologies: [
                         "NextJS",
-                        "NodeJS",
                         "Tailwind CSS",
                         "Supabase",
                         "Javascript",
@@ -169,8 +168,8 @@ const defaultData = {
         aboutMe: {
             title: "Tentang Saya",
             description: [
-                "Sebagai individu yang bersemangat di bidang teknologi, saya memiliki ketertarikan yang kuat dalam Desain Grafis, Pengembangan Front-End, Pengembangan Back-End, dan Dukungan TI. Selama studi saya di ilmu komputer, saya aktif berpartisipasi dalam berbagai proyek pengembangan perangkat lunak, yang telah memperdalam pemahaman saya tentang prinsip-prinsip pemrograman dasar dan inovasi teknologi.",
-                "Selama studi saya di ilmu komputer, saya aktif berpartisipasi dalam berbagai proyek pengembangan perangkat lunak, yang telah memperdalam pemahaman saya tentang prinsip-prinsip pemrograman dasar dan inovasi teknologi."
+                "Sebagai individu yang antusias di bidang teknologi, saya memiliki minat kuat dalam Desain Grafis, Pengembangan Front-End & Back-End, serta Dukungan TI. Saya aktif terlibat dalam berbagai proyek pengembangan perangkat lunak yang memperkuat pemahaman saya tentang prinsip pemrograman dan penerapan teknologi terkini.",
+                "Dengan latar belakang studi di bidang Ilmu Komputer, saya terus mengembangkan keterampilan teknis dan kreatif melalui praktik langsung, eksplorasi teknologi baru, dan kolaborasi dalam tim."
             ]
         },
         title: "Visi & Pendekatan",
@@ -196,17 +195,22 @@ const defaultData = {
                 {
                     buttonText: "Keterampilan Teknis:",
                     skills: [
-                        "Pengembangan Front-End: Terampil dalam membuat halaman web yang interaktif dan responsif menggunakan HTML, CSS, dan JavaScript.",
-                        "Pengembangan Back-End: Berpengalaman dalam membangun aplikasi sisi server dengan Node.js, Python, Express.js, dan JavaScript.",
-                        "Manajemen Basis Data: Berpengetahuan dalam bekerja dengan basis data seperti MongoDB, MySQL, dan SQLite untuk menyimpan, mengambil, dan mengelola data.",
-                        "Pemecahan Masalah Komputer: Terampil dalam mendiagnosis dan menyelesaikan masalah perangkat keras dan perangkat lunak, memastikan kinerja sistem yang lancar."
+                        "Pengembangan Front-End: Mahir dalam membuat halaman web yang interaktif dan responsif menggunakan HTML, CSS, JavaScript, serta framework modern seperti React.js, Next.js, dan Flutter.",
+                        "Pengembangan Back-End: Berpengalaman dalam membangun aplikasi sisi server menggunakan Node.js, Express.js, Python, JavaScript, dan Laravel.",
+                        "Pengembangan Aplikasi Desktop: Mampu membuat aplikasi desktop lintas platform menggunakan Electron.",
+                        "Manajemen Basis Data: Memiliki pengetahuan dalam mengelola basis data seperti MongoDB, MySQL, dan SQLite untuk menyimpan, mengambil, dan mengelola data.",
+                        "Pemecahan Masalah Komputer: Terampil dalam mendiagnosis dan menyelesaikan masalah perangkat keras maupun perangkat lunak untuk memastikan performa sistem yang optimal."
                     ],
                     icons: [
                         "public/img/logo/icon/nodejs.png",
                         "public/img/logo/icon/python.png",
                         "public/img/logo/icon/js.png",
                         "public/img/logo/icon/mysql.png",
-                        "public/img/logo/icon/mongodb.png"
+                        "public/img/logo/icon/mongodb.png",
+                        "public/img/logo/icon/flutter.svg",
+                        "public/img/logo/icon/laravel.png",
+                        "public/img/logo/icon/nextjs.png",
+                        "public/img/logo/icon/reactjs.png"
                     ]
                 },
                 {
@@ -261,21 +265,17 @@ const defaultData = {
             },
             projects: [
                 {
-                    title: "LAZ BaitulMaalKu",
-                    company: "Fullstack Developer | Marketing Komunikasi",
-                    date: "Januari 2024 - Sekarang",
-                    description: "BaitulMaalKu adalah platform digital yang dirancang untuk mempermudah pengelolaan zakat, infaq, dan sedekah dengan transparansi dan efisiensi. Situs ini menyediakan antarmuka yang mudah dan aman bagi individu dan organisasi untuk menyalurkan dana sosial.",
+                    title: "Profil Perusahaan",
+                    company: "LAZ BaitulMaalKu",
+                    date: "Januari 2024",
+                    description: "Website resmi yang menampilkan profil, layanan, dan struktur lembaga.",
                     technologies: [
                         "Express",
                         "NodeJS",
                         "Tailwind CSS",
-                        "Bootstrap 5",
                         "AnimeJS",
                         "Font Awesome",
-                        "SQLite",
-                        "Javascript",
-                        "Figma",
-                        "Github"
+                        "Javascript"
                     ],
                     link: "https://baitulmaalku.com",
                     imageUrl: "public/img/post/image.png"
@@ -283,7 +283,7 @@ const defaultData = {
                 {
                     title: "Donation BaitulMaalKu",
                     company: "LAZ BaitulMaalKu",
-                    date: "2025",
+                    date: "Juli 2025",
                     description: "Sistem manajemen donasi untuk BaitulMaalKu, memfasilitasi proses donasi yang mudah dan transparan untuk berbagai tujuan sosial.",
                     technologies: [
                         "HTML",
@@ -299,7 +299,7 @@ const defaultData = {
                 {
                     title: "Business Planning App",
                     company: "Fullstack Developer",
-                    date: "2025",
+                    date: "Juli 2025",
                     description: "Alat bantu perencanaan bisnis untuk UKM. Analisis kelayakan, proyeksi keuangan, dan target realistis.",
                     technologies: [
                         "NextJS",
