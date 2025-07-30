@@ -120,6 +120,39 @@ const defaultData = {
                     ],
                     link: "https://baitulmaalku.com",
                     imageUrl: "public/img/post/image.png"
+                },
+                {
+                    title: "Donation BaitulMaalKu",
+                    company: "LAZ BaitulMaalKu",
+                    date: "2025",
+                    description: "A donation management system for BaitulMaalKu, facilitating easy and transparent donation processes for various social causes.",
+                    technologies: [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "Bootstrap",
+                        "PHP",
+                        "MySQL"
+                    ],
+                    link: "donasi.baitulmaalku.com",
+                    imageUrl: "public/img/post/donasibmku.png"
+                },
+                {
+                    title: "Business Planning App",
+                    company: "Fullstack Developer",
+                    date: "2025",
+                    description: "A business planning tool for SMEs. Feasibility analysis, financial projections, and realistic targets.",
+                    technologies: [
+                        "NextJS",
+                        "NodeJS",
+                        "Tailwind CSS",
+                        "Supabase",
+                        "Javascript",
+                        "Github",
+                        "Vercel"
+                    ],
+                    link: "https://bpa-business-planning-app.vercel.app/",
+                    imageUrl: "public/img/post/bpa.png"
                 }
             ],
             thankYou: "Thank <span>you!</span>"
@@ -246,6 +279,39 @@ const defaultData = {
                     ],
                     link: "https://baitulmaalku.com",
                     imageUrl: "public/img/post/image.png"
+                },
+                {
+                    title: "Donation BaitulMaalKu",
+                    company: "LAZ BaitulMaalKu",
+                    date: "2025",
+                    description: "Sistem manajemen donasi untuk BaitulMaalKu, memfasilitasi proses donasi yang mudah dan transparan untuk berbagai tujuan sosial.",
+                    technologies: [
+                        "HTML",
+                        "CSS",
+                        "Javascript",
+                        "Bootstrap",
+                        "PHP",
+                        "MySQL"
+                    ],
+                    link: "donasi.baitulmaalku.com",
+                    imageUrl: "public/img/post/donasibmku.png"
+                },
+                {
+                    title: "Business Planning App",
+                    company: "Fullstack Developer",
+                    date: "2025",
+                    description: "Alat bantu perencanaan bisnis untuk UKM. Analisis kelayakan, proyeksi keuangan, dan target realistis.",
+                    technologies: [
+                        "NextJS",
+                        "NodeJS",
+                        "Tailwind CSS",
+                        "Supabase",
+                        "Javascript",
+                        "Github",
+                        "Vercel"
+                    ],
+                    link: "https://bpa-business-planning-app.vercel.app/",
+                    imageUrl: "public/img/post/bpa.png"
                 }
             ],
             thankYou: `Terima <span>kasih!</span>`
