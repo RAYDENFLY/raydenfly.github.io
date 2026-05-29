@@ -152,6 +152,55 @@ const defaultData = {
                     ],
                     link: "https://bpa-business-planning-app.vercel.app/",
                     imageUrl: "public/img/post/bpa.png"
+                },
+                {
+                    title: "Quantum Terminal",
+                    company: "Fullstack Developer",
+                    date: "Desember 2025",
+                    description: "Professional crypto trading platform with real-time market data, news, on-chain analytics, and educational content.",
+                    technologies: [
+                        "NextJS",
+                        "NodeJS",
+                        "Tailwind CSS",
+                        "Javascript",
+                        "Github",
+                        "Vercel",
+                        "GroqAPI",
+                        "mongodb"
+                    ],
+                    link: "https://quantumterminal.vercel.app/",
+                    imageUrl: "public/img/post/quantumterminal.png"
+                },
+                {
+                    title: "Sistem Penyiraman Otomatis Tanaman Melon",
+                    company: "Fullstack Developer",
+                    date: "Januari 2026",
+                    description: "IoT-based automated melon irrigation system with real-time monitoring and control.",
+                    technologies: [
+                        "Arduino",
+                        "irrigation system",
+                        "ESP32",
+                        "WebSocket",
+                        "HTML"
+                    ],
+                    link: "https://github.com/RAYDENFLY/sistem-penyiraman-otomatis-melon-esp32/",
+                    imageUrl: "public/img/post/sistempenyiraman.png"
+                },
+                {
+                    title: "Quiz-Merdeka",
+                    company: "Fullstack Developer",
+                    date: "Agustus 2025",
+                    description: "An AI-powered quiz app for learning Indonesia's independence history.",
+                    technologies: [
+                        "NextJS",
+                        "Python",
+                        "Express",
+                        "MongoDB",
+                        "Mailry",
+                        "OpenAI API"
+                    ],
+                    link: "https://github.com/RAYDENFLY/Quiz-Merdeka",
+                    imageUrl: "public/img/post/quiz-merdeka.png"
                 }
             ],
             thankYou: "Thank <span>you!</span>"
@@ -312,6 +361,55 @@ const defaultData = {
                     ],
                     link: "https://bpa-business-planning-app.vercel.app/",
                     imageUrl: "public/img/post/bpa.png"
+                },
+                {
+                    title: "Quantum Terminal",
+                    company: "Fullstack Developer",
+                    date: "Desember 2025",
+                    description: "Platform trading kripto profesional dengan data real-time, berita, analitik on-chain, dan edukasi.",
+                    technologies: [
+                        "NextJS",
+                        "NodeJS",
+                        "Tailwind CSS",
+                        "Javascript",
+                        "Github",
+                        "Vercel",
+                        "GroqAPI",
+                        "mongodb"
+                    ],
+                    link: "https://quantumterminal.vercel.app/",
+                    imageUrl: "public/img/post/quantumterminal.png"
+                },
+                {
+                    title: "Sistem Penyiraman Otomatis Tanaman Melon",
+                    company: "Fullstack Developer",
+                    date: "Januari 2026",
+                    description: "Sistem penyiraman tanaman melon otomatis berbasis IoT dengan pemantauan dan kontrol real-time.",
+                    technologies: [
+                        "Arduino",
+                        "Sensor Kelembapan",
+                        "ESP32",
+                        "WebSocket",
+                        "HTML"
+                    ],
+                    link: "https://github.com/RAYDENFLY/sistem-penyiraman-otomatis-melon-esp32/",
+                    imageUrl: "public/img/post/sistempenyiraman.png"
+                },
+                {
+                    title: "Quiz-Merdeka",
+                    company: "Fullstack Developer",
+                    date: "Agustus 2025",
+                    description: "Kuis kemerdekaan Indonesia berbasis AI yang interaktif dan edukatif.",
+                    technologies: [
+                        "NextJS",
+                        "Python",
+                        "Express",
+                        "MongoDB",
+                        "Mailry",
+                        "OpenAI API"
+                    ],
+                    link: "https://github.com/RAYDENFLY/Quiz-Merdeka",
+                    imageUrl: "public/img/post/quiz-merdeka.png"
                 }
             ],
             thankYou: `Terima <span>kasih!</span>`

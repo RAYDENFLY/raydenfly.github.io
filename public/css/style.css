@@ -1109,17 +1109,14 @@ body, html {
 }
 
 .projects {
-  display: flex;
-  flex-wrap: nowrap !important;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
-  justify-content: flex-start !important;
-  overflow-x: auto !important;
-  overflow-y: hidden !important;
-  padding: 20px 20px 20px 20px;
-  scrollbar-width: thin;
-  scrollbar-color: #F02626 #1a1a1a;
-  width: 100% !important;
-  max-width: 100vw !important;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -1146,16 +1143,14 @@ body, html {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  min-width: 350px !important;
-  max-width: 350px !important;
-  width: 350px !important;
   display: flex;
   flex-direction: column;
   /* height: 683px !important; */
   /* min-height: 683px !important; */
   /* max-height: 683px !important; */
-  flex: 0 0 350px !important;
-  flex-shrink: 0 !important;
+  width: 100%;
+  max-width: 380px;
+  justify-self: center;
 }
 
 .project-card img {
@@ -1232,97 +1227,16 @@ body, html {
   border-radius: 5px;
   font-size: 0.9em;
 }
-/* Ensure horizontal scrolling for all devices above 775px */
-@media (min-width: 776px) {
+/* Responsive grid for projects */
+@media (max-width: 1120px) {
   .projects {
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    gap: 20px;
-    justify-content: flex-start !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    padding: 20px 20px 20px 20px !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-    min-height: 616px !important;
-    height: auto !important;
-    scrollbar-width: thin !important;
-    scrollbar-color: #F02626 #1a1a1a !important;
-    box-sizing: border-box !important;
-  }
-  
-  .projects::-webkit-scrollbar {
-    height: 8px !important;
-  }
-
-  .projects::-webkit-scrollbar-track {
-    background: #1a1a1a !important;
-    border-radius: 4px !important;
-  }
-
-  .projects::-webkit-scrollbar-thumb {
-    background: #F02626 !important;
-    border-radius: 4px !important;
-  }
-
-  .projects::-webkit-scrollbar-thumb:hover {
-    background: #d60101 !important;
-  }
-  
-  .project-card {
-    min-width: 350px !important;
-    width: 350px !important;
-    max-width: 350px !important;
-    height: 566px !important;
-    min-height: 566px !important;
-    max-height: 566px !important;
-    flex: 0 0 350px !important;
-    flex-shrink: 0 !important;
-    flex-grow: 0 !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* Small screen layout for 740px and below */
-@media (max-width: 740px) {
+@media (max-width: 600px) {
   .projects {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center;
-      overflow-x: visible;
-      overflow-y: visible;
-      flex-wrap: wrap;
-  }
-  
-  .project-card {
-      width: 90% !important;
-      max-width: 350px !important;
-      min-width: 280px !important;
-      /* height: 518px !important; */
-      /* min-height: 518px !important; */
-      /* max-height: 518px !important; */
-      flex: none !important;
-  }
-}
-
-/* Mobile layout for 768px and below */
-@media (max-width: 768px) {
-  .projects {
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      justify-content: center !important;
-      overflow-x: visible;
-      overflow-y: visible;
-      flex-wrap: wrap;
-      padding: 20px !important;
-  }
-  
-  .project-card {
-      width: 90% !important;
-      max-width: 400px !important;
-      min-width: 300px !important;
-      flex: none !important;
-      margin: 0 auto 20px auto !important;
+    grid-template-columns: 1fr;
   }
 }
 
